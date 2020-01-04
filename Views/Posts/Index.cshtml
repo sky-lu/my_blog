@@ -4,62 +4,61 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Title)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.AddDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Content)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Reviews)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PageViews)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Likes)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Title)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.AddDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Content)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Reviews)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PageViews)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Likes)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - my_blog</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9">
+                <h2>Posts</h2>
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">
+                            Some example text. Some example text.aaaasfhghjkhkklkoghtgthghhgygguguuuuuuugguguuguu
+                            Discover the proposal software that modern sales teams use to create, send, track, and e-sign winning proposals, contracts, and agreements.
+                            Your sales team is wasting too much time hunting down the right content. Reps are fumbling around with copy/paste, formatting,
+                            and hacking together documents. Proposals are off-brand and inconsistent, but Sales can’t afford to wait for Marketing to design one for every deal.
+                            And the approval process is either non-existent or creates deal-killing bottlenecks.
+                        </p>
+                    </div>
+                </div>
+                <br />
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">
+                            Some example text. Some example text.aaaasfhghjkhkklkoghtgthghhgygguguuuuuuugguguuguu
+                            Discover the proposal software that modern sales teams use to create, send, track, and e-sign winning proposals, contracts, and agreements.
+                            Your sales team is wasting too much time hunting down the right content. Reps are fumbling around with copy/paste, formatting,
+                            and hacking together documents. Proposals are off-brand and inconsistent, but Sales can’t afford to wait for Marketing to design one for every deal.
+                            And the approval process is either non-existent or creates deal-killing bottlenecks.
+                        </p>
+                    </div>
+                </div>
+                <br />
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">
+                            Some example text. Some example text.aaaasfhghjkhkklkoghtgthghhgygguguuuuuuugguguuguu
+                            Discover the proposal software that modern sales teams use to create, send, track, and e-sign winning proposals, contracts, and agreements.
+                            Your sales team is wasting too much time hunting down the right content. Reps are fumbling around with copy/paste, formatting,
+                            and hacking together documents. Proposals are off-brand and inconsistent, but Sales can’t afford to wait for Marketing to design one for every deal.
+                            And the approval process is either non-existent or creates deal-killing bottlenecks.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">Tags</div>
+        </div>
+    </div>
+</body>
+</html>
