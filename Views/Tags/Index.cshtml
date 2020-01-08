@@ -1,41 +1,53 @@
 ﻿@model IEnumerable<my_blog.Models.Tag>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Tags";
 }
 
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Content)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Content)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - my_blog</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <a href="#" class="badge badge-info">Primary</a>
+                <a href="#" class="badge badge-info">Secondary</a>
+                <a href="#" class="badge badge-info">Success</a>
+                <a href="#" class="badge badge-info">Danger</a>
+                <a href="#" class="badge badge-info">Warning</a>
+                <a href="#" class="badge badge-info">Info</a>
+                <a href="#" class="badge badge-info">Light</a>
+                <a href="#" class="badge badge-info">Dark</a>
+                <br />
+                <br />
+                <a href="#" class="badge badge-info">Primary</a>
+                <a href="#" class="badge badge-info">Secondary</a>
+                <a href="#" class="badge badge-info">Success</a>
+                <a href="#" class="badge badge-info">Danger</a>
+                <a href="#" class="badge badge-info">Warning</a>
+                <a href="#" class="badge badge-info">Info</a>
+                <a href="#" class="badge badge-info">Light</a>
+                <a href="#" class="badge badge-info">Dark</a>
+                <br />
+                <br />
+                <a href="#" class="badge badge-info">Primary</a>
+                <a href="#" class="badge badge-info">Secondary</a>
+                <a href="#" class="badge badge-info">Success</a>
+                <a href="#" class="badge badge-info">Danger</a>
+                <a href="#" class="badge badge-info">Warning</a>
+                <a href="#" class="badge badge-info">Info</a>
+                <a href="#" class="badge badge-info">Light</a>
+                <a href="#" class="badge badge-info">Dark</a>
+           </div>
+        </div>
+    </div>
+    
+</body>
+</html>
