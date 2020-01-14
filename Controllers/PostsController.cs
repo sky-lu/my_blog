@@ -119,7 +119,8 @@ namespace my_blog.Controllers
         // GET: Posts/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null)
+            return View("AdminDelete");
+            /*if (id == null)
             {
                 return NotFound();
             }
@@ -131,7 +132,7 @@ namespace my_blog.Controllers
                 return NotFound();
             }
 
-            return View(post);
+            return View(post);*/
         }
 
         // POST: Posts/Delete/5
